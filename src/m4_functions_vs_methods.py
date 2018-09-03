@@ -4,12 +4,12 @@ Demonstrates using (calling) FUNCTIONS and using (calling) METHODS:
   -- how they differ.
 
 Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
-         their colleagues and Vibha Alangar.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Vibha Alangar, Isaac Harper.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 #
-# TODO: 2.
+# Done: 2.
 #   With your instructor, READ the file   methods_vs_functions.txt
 #   in this project, ASKING QUESTIONS as needed to understand its contents.
 #   After you have done so, mark this _TODO_ as DONE
@@ -101,7 +101,7 @@ def draw_many_squares(my_turtle, number_of_squares, size, twist):
 
 ###############################################################################
 #
-# TODO: 3.
+# Done: 3.
 #   There are four FUNCTIONS defined ABOVE this:
 #     main
 #     run_example
@@ -137,6 +137,14 @@ def try_methods():
       -- forward    50 units
       -- backward  100 units
     """
+    window = rg.TurtleWindow()
+
+    turtle1 = rg.SimpleTurtle()
+    turtle1.pen = rg.Pen('brown', 5)
+    turtle1.forward(150)
+    turtle1.left(90)
+    turtle1.forward(50)
+    turtle1.backward(100)
     ###########################################################################
     # TODO: 3. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
