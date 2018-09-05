@@ -131,7 +131,6 @@ def better_draw_circles(point):
     turtle.set_heading(0)  # Point "east" (towards the right)
 
     for k in range(1, 11):  # k becomes 1, 2, 3, ... 10
-
         turtle.pen_up()
 
         # Go DOWN 15 pixels, ending up pointing east again
