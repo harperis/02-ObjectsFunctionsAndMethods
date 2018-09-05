@@ -174,9 +174,18 @@ jump_and_move_turtle(-50, 50, 100, 100)
 
 
 def try_methods_and_functions():
-    try_methods_and_functions()
-    # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
-    """
+    isaac = rg.SimpleTurtle()
+    isaac.pen = rg.Pen('black', 15)
+    isaac.backward(150)
+    isaac.speed = 100
+    isaac.backward(200)
+    isaac.draw_circle(30)
+    isaac.draw_square(50)
+    for k in range(1):
+        draw_many_squares(isaac, 8, 300, 60)
+
+# IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
+"""
     Constructs a SimpleTurtle and sets its   pen  to a new rg.Pen
     that is 'blue' with thickness 5.
 
@@ -208,18 +217,18 @@ def try_methods_and_functions():
       8. Draw a SQUARE whose sides are each of length 50.
     """
     ###########################################################################
-    # TODO: 5. Implement and test this function, per its doc-string above.
+    # Done: 5. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     #
     #   NOTE: This function should ** CALL ** the
     #     draw_many_squares
     #   function defined above.  If you don't see why, ** ASK FOR HELP. **
     ###########################################################################
-try_methods_and_functions()
 
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # -----------------------------------------------------------------------------
+
 
 main()
