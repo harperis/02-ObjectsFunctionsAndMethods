@@ -8,7 +8,7 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 
 ###############################################################################
 #
-# TODO: 2.
+# Done: 2.
 #   Allow this module to use the  rosegraphics.py  module by marking the
 #     src
 #   folder in this project as a "Sources Root", as follows:
@@ -21,6 +21,8 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 import rosegraphics as rg
 
 import math
+
+
 def main():
     example('orange', 15)
     example('pink', 10)
