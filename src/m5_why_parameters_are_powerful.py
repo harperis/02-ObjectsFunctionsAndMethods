@@ -11,7 +11,7 @@ def main():
     """
     Calls the other functions in this module to test and/or demonstrate them.
     """
-    drawing_speed = 10  # Bigger numbers mean faster drawing
+    drawing_speed = 100  # Bigger numbers mean faster drawing
     window = rg.TurtleWindow()
     window.tracer(drawing_speed)
 
@@ -19,9 +19,8 @@ def main():
     # When the _TODO_s ask you to test YOUR code, comment-out the following
     # two statements and add calls to   better_draw_circles   et al as needed.
     # -------------------------------------------------------------------------
-    draw_circles(rg.Point(100, 50))
-    draw_circles(rg.Point(-200, 0))
-
+    #draw_circles(rg.Point(100, 50))
+    #draw_circles(rg.Point(-200, 0))
     window.update()
     window.close_on_mouse_click()
 
@@ -119,7 +118,6 @@ def draw_circles(point):
 #
 # ###############################################################################
 
-
 def better_draw_circles(point):
     """
     Starts out the same as the   draw_circles   function defined ABOVE.
@@ -129,7 +127,6 @@ def better_draw_circles(point):
     turtle.pen_up()
     turtle.go_to(point)
     turtle.set_heading(0)  # Point "east" (towards the right)
-
     for k in range(1, 11):  # k becomes 1, 2, 3, ... 10
         turtle.pen_up()
 
@@ -140,6 +137,8 @@ def better_draw_circles(point):
 
         turtle.pen_down()
         turtle.draw_circle(15 * k)  # Radius 15, 30, 45, 60, ...
+draw_circles(rg.Point(100, 200))
+draw_circles(rg.Point(50,50))
 
 
 ###############################################################################
